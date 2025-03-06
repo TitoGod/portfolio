@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Freelancer - Start Bootstrap Theme</title>
+        <title>Mauro Diaz Ruffino | Portfolio</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -20,37 +20,75 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="#page-top">Mauro Diaz Ruffino</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <!-- Sobre Mi con icono -->
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">
+                                <i class="fas fa-user me-2"></i>Sobre Mi
+                            </a>
+                        </li>
+                        <!-- Proyectos con icono -->
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">
+                                <i class="fas fa-folder me-2"></i>Proyectos
+                            </a>
+                        </li>
+                        <!-- Contacto con icono -->
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">
+                                <i class="fas fa-envelope me-2"></i>Contacto
+                            </a>
+                        </li>
+                        <!-- CV con icono -->
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="cv/CV.pdf" target="_blank">
+                                <i class="fas fa-file-pdf me-2"></i>CV
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Start Bootstrap</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+        <header class="masthead text-white text-center d-flex align-items-center justify-content-center" style="height: 100vh; background-image: url('assets/img/fondo-portada.jpg'); background-size: cover; background-position: center;">
+            <div class="container" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                <!-- Título principal -->
+                <h1 class="text-uppercase">Data Analyst</h1>
+                
+                <!-- Descripción breve -->
+                <p class="lead">Del caos de los datos a la claridad de la información.</p>
+                
+                <!-- Iconos de habilidades -->
+                <div class="mt-4">
+                    <i class="fas fa-chart-line fa-3x mx-3"></i>
+                    <i class="fas fa-database fa-3x mx-3"></i>
+                    <i class="fas fa-lightbulb fa-3x mx-3"></i>
                 </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
+                
+                <!-- Botón de llamado a la acción (opcional) -->
+                <a href="#portfolio" class="btn btn-primary btn-lg mt-3">Ver mis proyectos</a>
             </div>
-        </header>
+        </header>      
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container d-flex align-items-center flex-column flex-lg-row">
+                <!-- Contenedor de la imagen -->
+                <div class="col-lg-4 text-center text-lg-start me-lg-5">
+                    <img class="img-fluid rounded-circle mb-4" src="assets/img/perfil.jpeg" alt="Tu Nombre" width="400">
+                </div>
+                <!-- Contenedor del texto -->
+                <div class="col-lg-8 text-center text-lg-start me-lg-5">
+                    <h1 class="text-uppercase">¿Quién soy?</h1>
+                    <p class="lead">Soy Mauro, Analista de Datos con experiencia comprobable en el procesamiento, análisis y visualización de información para la toma de decisiones. Me apasiona convertir datos en insights accionables mediante herramientas como Python, SQL y Power BI. Actualmente, busco nuevos desafíos que me permitan crecer y seguir aprendiendo en este campo. Mi objetivo es aplicar mis habilidades técnicas para ayudar a las organizaciones a optimizar procesos, descubrir insights valiosos y tomar decisiones basadas en datos.</p>
+                </div>
+            </div>
+        </section>
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
@@ -70,7 +108,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/proyecto_nba.png" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
@@ -79,7 +117,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/proyecto_biogenesis.png" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
@@ -88,63 +126,9 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/proyecto_aw.png" alt="..." />
                         </div>
                     </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
-                </div>
-            </div>
         </section>
         <!-- Contact Section-->
         <section class="page-section" id="contact">
@@ -223,20 +207,27 @@
                 <div class="row">
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <h4 class="text-uppercase mb-4">Ubicación</h4>
                         <p class="lead mb-0">
-                            2215 John Daniel Drive
-                            <br />
-                            Clark, MO 65243
+                            <i class="fas fa-map-marker-alt me-2"></i>Resistencia, Chaco, Argentina
+                        </p>
+                        <p class="lead mb-0 mt-3">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:mauro.dr07@gmail.com" style="color: inherit; text-decoration: none;">Enviar correo</a>
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                        <h4 class="text-uppercase mb-4">Mis redes</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://wa.me/543624087948" target="_blank">
+                            <i class="fab fa-whatsapp fa-lg" style="color: #25D366;"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/mauro-diaz-ruffino/" target="_blank">
+                            <i class="fab fa-fw fa-linkedin-in fa-lg" style="color: #0A66C2;"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/TitoGod" target="_blank">
+                            <i class="fab fa-github fa-lg" style="color: #150c22;"></i>
+                        </a>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
@@ -252,7 +243,7 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
+            <div class="container"><small>Copyright &copy; Mauro Diaz Ruffino 2025</small></div>
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
