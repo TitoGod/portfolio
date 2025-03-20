@@ -11044,3 +11044,42 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+/* Efecto de escala (zoom) en las imágenes de los proyectos */
+.portfolio-item {
+  overflow: hidden; /* Para que la imagen no se salga del contenedor */
+  position: relative;
+}
+
+.portfolio-item img {
+  transition: transform 0.3s ease; /* Transición suave para el efecto de zoom */
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+}
+
+.portfolio-item {
+  padding: 10px; /* Ajusta el padding según sea necesario */
+}
+
+.portfolio-item img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Agregar bordes redondeados a las imágenes de los proyectos */
+.portfolio-item img {
+  border-radius: 15px; /* Ajusta este valor según el redondeo que desees */
+  transition: transform 0.3s ease; /* Mantén la transición para el efecto de zoom */
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1); /* Efecto de zoom */
+  border-radius: 15px; /* Mantén el borde redondeado incluso al hacer zoom */
+}
+
+.portfolio-item {
+  border-radius: 15px; /* Aplica el mismo redondeo al contenedor */
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+}
