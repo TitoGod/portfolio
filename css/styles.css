@@ -11083,3 +11083,199 @@ html {
   border-radius: 15px; /* Aplica el mismo redondeo al contenedor */
   overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
 }
+
+/* Estilos para la imagen de contacto */
+#contact img {
+  width: 100%; /* La imagen ocupa todo el ancho de la columna */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para el formulario de contacto */
+#contact form {
+  padding: 20px; /* Espaciado interno */
+  background-color: #f8f9fa; /* Fondo claro para el formulario */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  #contact img {
+      margin-bottom: 20px; /* Espacio debajo de la imagen en móviles */
+  }
+}
+
+/* Ajustes para el formulario de contacto */
+#contact .form-control {
+  padding-left: 20px; /* Mueve el texto de los inputs hacia la derecha */
+}
+
+#contact .form-floating label {
+  padding-left: 20px; /* Mueve las etiquetas hacia la derecha */
+}
+
+#contact form {
+  margin-left: 20px; /* Mueve el formulario hacia la derecha (opcional) */
+}
+
+/* Bordes redondeados para los inputs y textarea */
+#contact .form-control {
+  border-radius: 10px !important; /* Ajusta este valor según el redondeo que desees */
+}
+
+/* Bordes redondeados para el botón de enviar (opcional) */
+#contact .btn {
+  border-radius: 10px !important; /* Ajusta este valor según el redondeo que desees */
+}
+
+/* Reducir el padding del footer */
+.footer {
+  padding: 40px 0; /* Ajusta estos valores según lo que necesites */
+}
+
+/* Reducir el tamaño del texto del copyright */
+.copyright {
+  font-size: 15px; /* Ajusta este valor según lo que necesites */
+  padding: 10px 0; /* Ajusta el padding superior e inferior */
+}
+
+/* Reducir el padding de la sección de contacto */
+#contact {
+  padding: 30px 0; /* Ajusta estos valores según lo que necesites */
+}
+
+.rounded-logo {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+
+/* Paleta de colores nueva */
+
+
+
+.navbar-toggler {
+  background-color: #3498DB; /* Azul claro para el botón del menú */
+  border-color: #3498DB; /* Borde azul claro */
+}
+
+
+/* Estilos para los botones */
+.btn-primary {
+  background-color: #3498DB !important; /* Azul claro */
+  border-color: #3498DB !important; /* Borde azul claro */
+  color: #FFFFFF !important; /* Texto blanco */
+}
+
+.btn-primary:hover {
+  background-color: #2C3E50 !important; /* Azul oscuro al pasar el mouse */
+  border-color: #2C3E50 !important; /* Borde azul oscuro al pasar el mouse */
+}
+
+
+
+/* Estilos para el formulario de contacto */
+#contact form {
+  background-color: #ECF0F1; /* Gris claro */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#contact .form-control {
+  background-color: #FFFFFF; /* Blanco */
+  border: 1px solid #3498DB; /* Borde azul claro */
+  border-radius: 5px;
+}
+
+#contact .form-control:focus {
+  border-color: #2C3E50; /* Borde azul oscuro al enfocar */
+  box-shadow: 0 0 5px rgba(44, 62, 80, 0.5); /* Sombra azul oscuro */
+}
+
+/* Fondo gris claro para las secciones */
+.page-section {
+  background-color: #ECF0F1 !important; /* Gris claro */
+  padding: 50px 0; /* Ajusta el padding según sea necesario */
+}
+
+/* Estilos para la sección "Sobre Mi" */
+#about h1 {
+  color: #2C3E50 !important; /* Azul oscuro para el título */
+}
+
+#about p {
+  color: #2C3E50 !important; /* Azul oscuro para el párrafo */
+}
+
+/* Estilos para la nueva sección de inicio con imagen de fondo */
+.masthead {
+  position: relative; /* Necesario para el overlay */
+  height: 100vh; /* Altura completa de la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF; /* Texto blanco */
+  overflow: hidden; /* Evita que el overlay se salga */
+}
+
+/* Overlay semitransparente */
+.masthead::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2); /* Blanco con 20% de opacidad */
+  z-index: 1; /* Asegura que el overlay esté sobre la imagen */
+}
+
+/* Contenedor del texto (debe estar por encima del overlay) */
+.masthead .container {
+  position: relative; /* Necesario para que esté sobre el overlay */
+  z-index: 2; /* Asegura que el texto esté sobre el overlay */
+}
+
+/* Estilos para el nombre */
+.masthead h1 {
+  font-size: 5.5rem; /* Tamaño grande para el nombre */
+  font-weight: bold; /* Texto en negrita */
+  margin-bottom: 20px; /* Espacio debajo del nombre */
+}
+
+/* Estilos para la descripción */
+.masthead p {
+  font-size: 2.5rem; /* Tamaño mediano para la descripción */
+  opacity: 0.8; /* Texto ligeramente transparente */
+}
+
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Cambiar el color del texto a azul oscuro en el header */
+.masthead h1, .masthead p {
+  color: #2C3E50; /* Azul oscuro */
+}
+
+/* Agregar sombra al texto para mejorar la legibilidad */
+.masthead h1, .masthead p {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Sombra blanca */
+}
+
+/* Aumentar el tamaño de la fuente solo para "Data Analyst" */
+.masthead p.lead:first-of-type {
+  font-size: 3.5rem; /* Ajusta este valor según lo que necesites */
+}

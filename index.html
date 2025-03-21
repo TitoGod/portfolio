@@ -15,12 +15,20 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
     </head>
     <body id="page-top">
-        <!-- Navigation-->
+        <!-- Navigation -->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Mauro Diaz Ruffino</a>
+                <!-- Solo logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" alt="Logo" width="110" height="60" class="rounded-logo">
+                </a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -56,25 +64,18 @@
             </div>
         </nav>
         <!-- Masthead-->
+        <!-- Nueva sección de inicio con imagen de fondo -->
         <header class="masthead text-white text-center d-flex align-items-center justify-content-center" style="height: 100vh; background-image: url('assets/img/fondo-portada.jpg'); background-size: cover; background-position: center;">
-            <div class="container" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
-                <!-- Título principal -->
-                <h1 class="text-uppercase">Data Analyst</h1>
+            <div class="container">
+                <!-- Nombre con efecto de animación -->
+                <h1 id="typewriter" class="text-uppercase animate__animated animate__fadeInDown dm-serif-text-regular"></h1>
                 
-                <!-- Descripción breve -->
-                <p class="lead">Del caos de los datos a la claridad de la información.</p>
-                
-                <!-- Iconos de habilidades -->
-                <div class="mt-4">
-                    <i class="fas fa-chart-line fa-3x mx-3"></i>
-                    <i class="fas fa-database fa-3x mx-3"></i>
-                    <i class="fas fa-lightbulb fa-3x mx-3"></i>
-                </div>
-                
-                <!-- Botón de llamado a la acción (opcional) -->
-                <a href="#portfolio" class="btn btn-primary btn-lg mt-3">Ver mis proyectos</a>
+                <!-- Descripción breve con efecto de animación -->
+                <p class="lead animate__animated animate__fadeInUp animate__delay-1s dm-serif-text-regular-italic">Data Analyst</p>
+                        <!-- Nueva frase con el mismo efecto -->
+                <p class="lead animate__animated animate__fadeInUp animate__delay-2s dm-serif-text-regular-italic">Datos bien analizados, decisiones bien tomadas.</p>
             </div>
-        </header>      
+        </header>
         <!-- About Section-->
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container d-flex align-items-center flex-column flex-lg-row">
@@ -85,7 +86,7 @@
                 <!-- Contenedor del texto -->
                 <div class="col-lg-8 text-center text-lg-start me-lg-5">
                     <h1 class="text-uppercase">¿Quién soy?</h1>
-                    <p class="lead">Soy Mauro, Analista de Datos con experiencia comprobable en el procesamiento, análisis y visualización de información para la toma de decisiones. Me apasiona convertir datos en insights accionables mediante herramientas como Python, SQL y Power BI. Actualmente, busco nuevos desafíos que me permitan crecer y seguir aprendiendo en este campo. Mi objetivo es aplicar mis habilidades técnicas para ayudar a las organizaciones a optimizar procesos, descubrir insights valiosos y tomar decisiones basadas en datos.</p>
+                    <p class="lead">Hola! soy Mauro, Analista de Datos con experiencia comprobable en el procesamiento, análisis y visualización de información para la toma de decisiones. Me apasiona convertir datos en insights accionables mediante herramientas como Python, SQL y Power BI. Actualmente, busco nuevos desafíos que me permitan crecer y seguir aprendiendo en este campo. Mi objetivo es aplicar mis habilidades técnicas para ayudar a las organizaciones a optimizar procesos, descubrir insights valiosos y tomar decisiones basadas en datos.</p>
                 </div>
             </div>
         </section>
@@ -128,30 +129,28 @@
                                 <img class="img-fluid" src="assets/img/portfolio/proyecto_aw.png" alt="Adventure Works" />
                             </a>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
         </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
+        <!-- Contact Section -->
+        <section class="page-section contact-bg" id="contact">
             <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contáctame!</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
+                <!-- Contenedor de dos columnas -->
+                <div class="row">
+                    <!-- Columna izquierda: Imagen -->
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <!-- Contact Section Heading -->
+                        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contáctame!</h2>
+                        <!-- Icon Divider -->
+                        <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                        <img src="assets/img/contact-image.jpg" alt="Imagen de contacto" class="img-fluid rounded" />
+                    </div>
+                    <!-- Columna derecha: Formulario -->
+                    <div class="col-lg-6">
                         <form action="https://formspree.io/f/xeoaerwa" method="POST">
                             <!-- Nombre -->
                             <div class="form-floating mb-3">
@@ -170,7 +169,7 @@
                             </div>
                             <!-- Botón de Enviar -->
                             <button class="btn btn-primary btn-xl" type="submit">Enviar</button>
-                        </form>                        
+                        </form>
                     </div>
                 </div>
             </div>
@@ -231,6 +230,23 @@
             var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
                 return new bootstrap.Tooltip(tooltipTriggerEl);
             });
+        </script>
+        <script>
+            // Efecto de máquina de escribir
+            const typewriterText = "Mauro Diaz Ruffino"; // Texto a mostrar
+            const typewriterElement = document.getElementById("typewriter");
+            let i = 0;
+        
+            function typeWriter() {
+                if (i < typewriterText.length) {
+                    typewriterElement.innerHTML += typewriterText.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100); // Velocidad de escritura (100ms)
+                }
+            }
+        
+            // Iniciar el efecto cuando la página cargue
+            window.onload = typeWriter;
         </script>
     </body>
 </html>
